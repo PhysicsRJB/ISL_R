@@ -1,1 +1,1 @@
-In this repository I'll put all excersizes from the book 'An Introduction to Statistical Learning with Applications in R'.
+In this repository I'll put all exercises from the book 'An Introduction to Statistical Learning with Applications in R'.

@@ -21,3 +21,4 @@ hist(Books, col = 3, breaks = 30)
 hist(perc.alumni, col = 4, breaks = 30)
 hist(S.F.Ratio, col = 5, breaks = 30)
 
+
