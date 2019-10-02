@@ -1,0 +1,1 @@
+In this repository I'll put all excersizes from the book 'An Introduction to Statistical Learning with Applications in R'.
