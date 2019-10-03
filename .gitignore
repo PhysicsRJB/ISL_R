@@ -1,4 +1,6 @@
 .Rproj.user/
+.RData
+.Rhistory
 ISL.Rproj
 first_plot.jpeg
 Auto.data
