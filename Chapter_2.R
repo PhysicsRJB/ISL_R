@@ -28,8 +28,8 @@ fix(Auto)
 Auto = na.omit(Auto)
 length(colnames(Auto))
 for (i in seq(1,length(colnames(Auto)))){
-  print(range(Auto[, i]))
   print(colnames(Auto)[i])
+  print(range(Auto[, i]))
   }
 
 summary(Auto)
@@ -42,3 +42,32 @@ cor(Auto[ , -9])
 #to predict mpg, I'd use displacement, horsepower, displacement and weight, as they seem very corellated.
 #Also, cylinders might be useful. These predictors show highest correlation
 
+#Exercise 10
+library(MASS)
+Boston
+?Boston
+pairs(Boston)
+cor(Boston)
+#Crime per capita is correlated ith access to highways and property tax rate
+#meaning there's more crime in rich neighbourhood with easy escape routes
+
+for (i in seq(1,length(colnames(Boston)))){
+  print(colnames(Boston)[i])
+  print(range(Boston[, i]))
+}
+
+Boston[Boston$crim > 80, ]
+Boston[Boston$tax > 700, ]
+Boston[Boston$ptratio > 21.5, ]
+
+dim(Boston[Boston$chas > 0, ])
+#35 bound to river
+
+summary(Boston)
+#Median ptratio 19.05
+
+min(Boston$medv)
+Boston[Boston$medv == min(Boston$medv), ]
+
+Boston[Boston$rm > 8, ]
+#These suburbs have small crime rate and are mainly in Afro-American populated areas
